@@ -1,0 +1,98 @@
+body {
+	height: 100%;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(circle, white, gray)
+}
+
+td {
+	border: 0px;
+	margin: 0px;
+}
+
+p {
+	font-size: 28px;
+}
+
+div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pg-cell {
+	padding: 3px;
+	background-color: #5522DD;
+	border-radius: 3px;
+}
+
+.pg-cell:hover {
+	background-color: cyan;
+}
+
+.tmp-cell {
+	width: 17px;
+	height: 17px;
+	padding: 0px;
+	background-color: #fffa65;
+	text-align: center;
+	color: #000000;
+}
+
+div#game_area {
+	width: 520px;
+	display: grid;
+	margin: auto;
+	grid-template-columns: 125px 125px 250px;
+	grid-template-rows: 320px 60px 40px 40px;
+}
+
+#playground {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 3px;
+	background-color: black;
+	border-radius: 3px;
+}
+
+#template {
+	border: 1px;
+	padding: 1px;
+	margin: 1px;
+	background-color: black;
+}
+
+#playground_div {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+#template_div {
+	grid-row-start: 2;
+	grid-row-end: 5;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+#restart_button {
+	background: radial-gradient(94.00px at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, rgba(174, 148, 251, 0) 100%), #9EF9FF;
+	border: 2px solid #A09EFF;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin: 2px;
+	font-size: 16px;
+}
+
+#restart_button:hover {
+	background: radial-gradient(94.00px at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, rgba(174, 148, 251, 0) 100%), #E7FEFF;
+	border: 2px solid #C2C1FF;
+}
+
+#restart_button:active {
+	background: radial-gradient(94.00px at 50% 50%, #FFFFFF 0%, #FFFFFF 0.01%, rgba(174, 148, 251, 0) 100%), #AEF7FC;
+	border: 2px solid #C2C1FF;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

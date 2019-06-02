@@ -1,0 +1,40 @@
+<html>
+<!---
+OTTF Game
+Playground is the main playing area. By clicking on a cell, you increase
+the number on that cell and the ones on its four nearest neighbors if
+they are already active.
+The template on the bottom shows how the playground must look like in
+order to pass the level.
+--->
+<meta charset="UTF-8">
+
+<head>
+<title> OTTF Game </title>
+<link rel="stylesheet" type="text/css" href="ottf.css" />
+</head>
+
+<body>
+<h1 align="center"> OTTF </h1>
+<div id="game_area" align="center">
+	<div id="playground_div">
+		<table id="playground" border="0">
+		</table>
+	</div>
+	<div> <p id="level_label"> Level </p> </div>
+	<div> <button id="restart_button"> Restart </button> </div>
+	<div id="template_div">
+		<table id="template">
+		</table>
+	</div>
+	<div> <p> Time </p> </div>
+	<div> <p> Points </p> </div>
+	<div> <p id="time_label"> 0 s </p> </div>
+	<div> <p id="points_label"> 0 </p> </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="ottf.js"> </script>
+
+</html>
